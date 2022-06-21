@@ -681,6 +681,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
 @media (min-width: 768px) {
   .md\:top-7 {
     top: 1.75rem;
@@ -722,5 +729,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:p-10 {
     padding: 2.5rem;
+  }
+
+  .md\:line-clamp-none {
+    -webkit-line-clamp: unset;
   }
 }
